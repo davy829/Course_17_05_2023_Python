@@ -18,7 +18,7 @@
 # print(f"Петя сплел {int(petya)}шт")
 # print(f"Серго сплел {int(serg)}шт")
 
-# Задача №2
+# Задача №3
 # num = int(input('Введите номер билетика (6 цифр)_'))
 # firstNumer = num / 1000
 # secondNumber = num % 1000
@@ -34,7 +34,7 @@
 # else:
 #     print(f"Your tiket is not Happy {int(summ1)} + {int(summ2)}")
 
-# Задача №3
+# Задача №4
 widthChoklad = int(input('Введите ширину шоколада_'))
 heightChoklad = int(input('Введите длину шоколада_'))
 pieceChokladWidth = int(input('Введите ширину куска шоколада_'))
