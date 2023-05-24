@@ -21,3 +21,12 @@
 # else:
 #     res = numVag + numVagFromHead - 1
 # print(f"{res} вагогов ")
+
+
+# Задача №4
+year = int(input('Введите любые четыре цифры года (2023)_'))
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    res = 'Это високосный год'
+else:
+    res = 'Это обычный год'
+print(f"{res} ")
