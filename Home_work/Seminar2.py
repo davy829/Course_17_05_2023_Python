@@ -32,23 +32,16 @@
 # произведение P. Помогите Кате отгадать задуманные Петей числа.
 # 4 4 -> 2 2
 # 5 6 -> 2 3
-import random
-x, y = random.randint(0, 100), random.randint(0, 100)
-print(f"x={x}")
-print(f"y={y}")
-summXY = x + y
-composXY = x * y
-print(f"sum={summXY}")
-print(f"comp={composXY}")
-for i in range(0,100):
-    for j in range(0,100):
-        if x + y == i + j and x * y == i * j:
-            print(f"x={x}.y={y}")
+
+x = int(input("Введите сумму задуманых чисел : "))
+y = int(input("Введите произведение задуманых чисел : "))
+print(f"summ x={x}")
+print(f"compos y={y}")
+for i in range(0,x):
+    for j in range(0,y):
+        if x == i + j and y == i * j:
+            print(f"x={i}.y={j}")
             break
-
-
-
-
 
 #--------------------------------------------------------------------------------------------------------------
 # Задача 14: Требуется вывести все целые степени двойки (т.е. числа
