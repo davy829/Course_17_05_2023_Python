@@ -6,11 +6,12 @@ def Fibo(n):  # вернет фибоначи
 
 
 def Prostoe(n1):
-    if n1 > 3 and n1 % 2 != 0:
-        if n1 % 3 != 0 and n1 % 5 != 0:
-            return 'yes'
-    else:
-        return 'no'
+    if n1 > 2 and n1 % 2 != 0:
+        for i in range(3,n1 // 2):
+            if n1 % 2 != 1:
+               return 'no simple'
+        return 'simle'
+    return 'no simple'
 
 
 def Recount(mynum):
@@ -20,9 +21,17 @@ def Recount(mynum):
     Recount(mynum - 1)
 
 
-def power(base, exp):
-    if exp == 1:
-        return base
-    if exp != 1:
-        return base * power(base, exp - 1)
+def sqear(num_1, num_2):
+    if num_2 == 1:
+        return num_1
+    if num_1 != 1:
+        return num_1 * sqear(num_1, num_2 - 1)
+
+
+def sum_one_plus_one(num_1, num_2):
+    if num_2 == 0:
+        return num_1
+    num_1 = num_1 + 1
+    return sum_one_plus_one(num_1 , num_2 - 1)
+
 
