@@ -48,11 +48,12 @@
 #     for j in range(ot-1, do+1):
 #         print_operation_table(lambda x, y: x + y, i, j)
 #-------------------------R2----------------------------------
-# def print_operation_table(op, x=6, y=6):
-#     for i in range(1, y+1):
-#         for j in range(1, y + 1):
-#             if y == j: print('\t')
-#             print(op(i, j), end=' ')
-#
-#
-# print_operation_table(lambda x, y: x * y, 2, 7)
+def print_operation_table(op, x=6, y=6):
+    for i in range(1, y+1):
+        if x == i: print('\t')
+        for j in range(1, y + 1):
+
+            print(op(i, j), end=' ')
+
+
+print_operation_table(lambda x, y: x * y, 2, 7)
